@@ -1,0 +1,17 @@
+
+<div class="chat">
+  <div class="message-box">
+    <app-message class="message"
+                 *ngFor="let message of messages"
+                 [text]="message.text"
+                 [username]="message.username"
+                 [date]="message.timestamp"/>
+  </div>
+  <form class="message-input-form" [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+    <input class="message-send-input"
+           type="text"
+           formControlName="message"
+           placeholder="Введите сообщение...">
+    <button class="message-send-button">Отправить</button>
+  </form>
+</div>

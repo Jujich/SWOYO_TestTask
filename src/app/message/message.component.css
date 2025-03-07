@@ -1,0 +1,43 @@
+.message-bubble {
+  min-height: 70px;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  border: #009AE0 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  justify-self: flex-start;
+  min-width: 150px;
+  gap: 5px;
+  overflow: visible;
+}
+
+.own {
+  justify-self: flex-end;
+}
+
+.message-text {
+  margin: 0;
+  font-weight: 100;
+  background: transparent;
+  color: #FFFFFF;
+  max-width: 480px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  height: auto;
+  align-self: start;
+}
+.message-username {
+  margin: 0;
+  font-weight: 100;
+  background: transparent;
+  color: #FFC045;
+  font-size: 12px;
+}
+.message-date {
+  margin: 0;
+  font-weight: 100;
+  background: transparent;
+  color: #00acff;
+  font-size: 15px;
+  justify-self: right;
+}
